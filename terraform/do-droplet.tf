@@ -1,6 +1,6 @@
-resource "digitalocean_droplet" "web" {
-  name   = "dpsrv-do-1"
+resource "digitalocean_droplet" "dpsrv" {
+  name   = "dpsrv"
   image  = "fedora-39-x64"
-  region = "nyc3"
+  region = var.DO_REGION
   size   = "s-1vcpu-1gb"
 }
