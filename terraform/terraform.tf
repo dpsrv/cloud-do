@@ -5,4 +5,8 @@ terraform {
       version = "~> 2.0"
     }
   }
+
+	backend "local" {
+		path = "../secrets/terraform.tfstate"
+	}
 }
